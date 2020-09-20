@@ -1,6 +1,6 @@
 package design.undergroundsystem;
 
-import javafx.util.Pair;
+import design.Pair;
 
 import java.util.HashMap;
 
