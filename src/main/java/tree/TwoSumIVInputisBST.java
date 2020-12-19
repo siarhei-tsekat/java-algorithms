@@ -2,6 +2,7 @@ package tree;
 
 import common.TreeNode;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -17,8 +18,8 @@ public class TwoSumIVInputisBST {
         if (set.contains(k - root.val)) return true;
 
         set.add(root.val);
-
         return find(root.left, k, set) || find(root.right, k, set);
     }
+
 }
 

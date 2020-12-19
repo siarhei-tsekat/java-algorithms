@@ -19,15 +19,15 @@ public class MaxDepthOfBinaryTree {
     }
 
     public static int maxDepth(TreeNode root) {
-        return helper(root, 0);
+        return helper(root);
     }
 
-    private static int helper(TreeNode root, int depth) {
-        if (root == null) {
-            return 0;
-        }
-        int depthLeft = 1 + helper(root.left, depth + 1);
-        int depthRight = 1 + helper(root.right, depth + 1);
+    private static int helper(TreeNode root) {
+        if (root == null) return 0;
+
+        int depthLeft = 1 + helper(root.left);
+        int depthRight = 1 + helper(root.right);
+
         return Math.max(depthLeft, depthRight);
     }
 }
