@@ -1,6 +1,6 @@
 package graph;
 
-import javafx.util.Pair;
+import utils.Pair;
 
 import java.util.*;
 
@@ -89,7 +89,7 @@ class Solution {
         } else if (ways.get(stationTO).ways.get(0).size() == getBusses(stationFROM, bus)) {
             ArrayList<List<Pair<Integer, Integer>>> lists = new ArrayList<>(ways.get(stationFROM).ways);
             lists.forEach(el -> el.add(new Pair<>(stationFROM, bus)));
-            lists.forEach(l->ways.get(stationTO).ways.add(l));
+            lists.forEach(l -> ways.get(stationTO).ways.add(l));
         } else if (ways.get(stationTO).ways.get(0).size() > getBusses(stationFROM, bus)) {
             ArrayList<List<Pair<Integer, Integer>>> lists = new ArrayList<>(ways.get(stationFROM).ways);
             lists.forEach(el -> el.add(new Pair<>(stationFROM, bus)));
@@ -98,7 +98,7 @@ class Solution {
     }
 
     private int getBusses(int station, int bus) {
-       return ways.get(station).ways.get(0).size();
+        return ways.get(station).ways.get(0).size();
     }
 
 }

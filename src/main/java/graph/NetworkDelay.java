@@ -34,6 +34,7 @@ public class NetworkDelay {
             if (dist.containsKey(node)) continue;
 
             dist.put(node, timeToGetNode);
+
             for (int[] edge : graph.getOrDefault(node, new ArrayList<>())) {
                 int adjacent = edge[0];
                 int timeToGetAdj = edge[1];

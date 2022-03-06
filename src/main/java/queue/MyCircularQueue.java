@@ -80,7 +80,7 @@ class Application {
         myCircularQueue.enQueue(15);
         myCircularQueue.deQueue();
         myCircularQueue.enQueue(10);
-
+        System.out.println("");
     }
 }
 

@@ -11,6 +11,7 @@ public class ShortestPathInWeightedGraph {
 }
 
 class n {
+
     public List<Integer> find(int[][] grid, int start, int target) {
 
         List[] pathTo = new ArrayList[100];

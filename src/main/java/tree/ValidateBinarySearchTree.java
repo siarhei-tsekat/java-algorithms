@@ -1,4 +1,4 @@
-package divideAndConquer;
+package tree;
 
 import common.TreeNode;
 
